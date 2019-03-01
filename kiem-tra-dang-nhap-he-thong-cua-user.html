@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương Trình Kiểm Tra đăng nhập Hệ Thống của người dùng </title>
+</head>
+<body>
+<h3>Chương trình kiểm tra đăng nhập hệ thống của người dùng theo yêu cầu sau</h3>
+<script>
+    let a = prompt(' Nhap ten Dang Nhap : ');
+    switch (a) {
+        case 'Admin' : {
+            let b = prompt('Nhap Password : ');
+            switch (b) {
+                case  'TheMaster'  : alert('Welcome !');break;
+                case '' : alert('Canceled !');break;
+                default : alert('Wrong password !');break;
+            }
+        } break;
+        case '' : alert('Canceld !'); break;
+        default : alert('I don’t know you !'); break;
+
+    }
+</script>
+
+</body>
+</html>
